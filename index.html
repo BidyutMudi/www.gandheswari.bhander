@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gandheswari Bhander - Your Trusted Grocery Shop</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #a0c3af;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x450?text=Gandheswari+Bhander+-+Fresh+Groceries') no-repeat center/cover;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
+      font-weight: 700;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* About Section */
+    .about {
+      margin-bottom: 60px;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      color: #2f855a;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #555;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    /* Products Section */
+    .products {
+      margin-bottom: 60px;
+    }
+
+    .products h2 {
+      font-size: 2.5rem;
+      color: #2f855a;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #2f855a;
+    }
+
+    .product-card h3 {
+      padding: 15px 20px 10px;
+      color: #2f855a;
+      font-size: 1.3rem;
+    }
+
+    .product-card p {
+      padding: 0 20px 20px;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    /* Owner Section */
+    .owner-section {
+      background-color: #e6fffa;
+      border-left: 8px solid #2f855a;
+      padding: 30px 20px;
+      margin: 60px auto;
+      max-width: 800px;
+      font-size: 1.2rem;
+      color: #2f855a;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #2f855a;
+      color: white;
+      padding: 40px 20px;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 60px auto;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.25rem;
+      margin: 12px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1c2d21;
+      color: #a0c3af;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+
+    footer .credit {
+      color: #4ade80;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .product-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-card {
+        width: 90%;
+        max-width: 350px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gandheswari Bhander</h1>
+    <p>Your Trusted Grocery Shop in Anara, Purulia</p>
+  </header>
+
+  <section class="hero">
+    <h2>Fresh, Affordable & Quality Groceries Delivered with Care</h2>
+  </section>
+
+  <main class="container">
+
+    <section class="about" id="about">
+      <h2>About Gandheswari Bhander</h2>
+      <p>
+        Gandheswari Bhander is a family-owned grocery store located in the heart of Anara, Purulia.
+        We specialize in providing fresh vegetables, quality grains, dairy products, spices, and household essentials at affordable prices.
+        Since our inception, we have been committed to serving the local community with honesty and trust.
+        Our mission is to ensure every household has access to quality food and daily necessities without compromise.
+      </p>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Our Popular Products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="OIP.webp" alt="Premium Rice" />
+          <h3>Premium Rice</h3>
+          <p>Long grain, high-quality rice sourced from trusted farms.</p>
+        </article>
+
+<article class="product-card">
+  <img src="Organic-Atta_LS.jpg" alt="Atta">
+  <h3>Atta (Wheat Flour)</h3>
+  <p>High-quality wheat flour for soft rotis and healthy daily meals.</p>
+</article>
+
+<article class="product-card">
+  <img src="ImageForArticle_713_16449327827222045.webp" alt="Pulses & Lentils" />
+  <h3>Pulses & Lentils</h3>
+  <p>High-quality moong, masoor, chana dal and more at best prices.</p>
+</article>
+
+
+        <article class="product-card">
+          <img src="cookingoil.jpg" alt="Cooking Oil" />
+          <h3>Cooking Oil</h3>
+          <p>Pure and refined oils suitable for daily cooking needs.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="spices-photo-1.jpg" alt="Spices & Masalas" />
+          <h3>Spices & Masalas</h3>
+          <p>Traditional Indian spices freshly ground for rich flavors.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="snakes.jpg" alt="Snacks & Biscuits" />
+          <h3>Snacks & Biscuits</h3>
+          <p>Delicious, fresh snacks and biscuits for all occasions.</p>
+        </article>
+
+<article class="product-card">
+  <img src="domestic-broom-500x500.webp" alt="Broom">
+  <h3> (Broom)</h3>
+  <p>Traditional grass broom for effective and easy home cleaning.</p>
+</article>
+
+<article class="product-card">
+  <img src="Frame-1957.webp" alt="Detergent">
+  <h3>Detergent Powder</h3>
+  <p>Clothes cleaning powders like Surf Excel, Wheel, and Rin.</p>
+</article>
+
+<article class="product-card">
+  <img src="sugar-cubes.jpg" alt="Sugar">
+  <h3>Sugar</h3>
+  <p>Clean, crystal white sugar for tea, sweets, and everyday use.</p>
+</article>
+
+
+<section class="why-choose-us" style="
+  background-color: #f0fdf4;
+  padding: 40px 20px;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+">
+  <h2 style="
+    text-align: center;
+    font-size: 2.2rem;
+    color: #15803d;
+    margin-bottom: 30px;
+  ">
+    ✅ Why Choose Gandheswari Bhander
+  </h2>
+
+  <ul style="
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+    color: #065f46;
+    max-width: 800px;
+    margin: auto;
+  ">
+    <li>✅ Trusted since 2010</li>
+    <li>✅ Fair village prices</li>
+    <li>✅ Fresh and local produce</li>
+    <li>✅ Daily essentials available all week</li>
+    <li>✅ Family-run business with personal care</li>
+  </ul>
+</section>
+
+
+      </div>
+    </section>
+
+    <section class="owner-section">
+      <p><strong>Managed and verified by:</strong> Ajoy Mudi</p>
+      <p>Gandheswari Bhander is proud to be a family-run business built on honesty, quality, and community trust.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>📍 Location: Anara, Purulia, West Bengal</p>
+      <p>📞 Phone: 7586086086</p>
+      <p>📧 Email: suvomudi3@gmail.com</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gandheswari Bhander. All Rights Reserved.</p>
+    <p class="credit">Website created by Bidyut Mudi</p>
+  </footer>
+
+</body>
+</html>
+
+<link rel="stylesheet" href="style.css">
